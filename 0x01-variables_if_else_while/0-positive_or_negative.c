@@ -2,8 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main -> assign a random number to the variable n each time it is executed
- * description:  prints out based on description
+ * main - My entry point
+ * description:  assign a random number to the variable n
  * return: (0)
 */
 int main(void)
@@ -12,7 +12,7 @@ int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 if (n > 0)
-printf("%d is postive\n", n);
+print("%d is positive\n", n);
 if (n == 0)
 printf("%d is zero\n", n);
 if (n < 0)

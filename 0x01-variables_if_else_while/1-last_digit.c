@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main - assign random number
- * description: prints number stored in variable
+ * description: print last digit of number
  * return: (0)
 */
 int main(void)
@@ -11,13 +11,18 @@ int main(void)
 int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-if (n > 0)
-printf("%d is positive\n", n);
-if (n == 0)
-printf("%d is zero\n", n);
-if (n < 0)
+printf("last digit of %d is ", n);
+if (n > 5)
 {
-printf("%d is negative\n", n);
+printf("greater than 5");
+}
+if (n == 0)
+{
+printf("0");
+}
+if (n > 6 && n != 0)
+{
+printf("less than 6 not 0");
 }
 return (0);
 }
